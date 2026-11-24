@@ -1,0 +1,446 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>GTA 6 Cheat Codes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Searchable GTA 6 cheat code reference with PS5 D-pad codes, unlock requirements and verification status.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky filter bar over a responsive card grid; how-to, PC notice and sources below. */
+:root {
+  --bg: #f4f2f7;
+  --surface: #ffffff;
+  --surface2: #ebe8f1;
+  --fg: #17142a;
+  --muted: #5d5873;
+  --line: #d9d4e4;
+  --accent: #c81e56;
+  --accent-fg: #ffffff;
+  --ok: #0a7a70;
+  --warn: #8a5700;
+  --key: #17142a;
+  --key-fg: #ffffff;
+  --font-display: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0d1a; --surface: #171630; --surface2: #211f42; --fg: #efecfa; --muted: #a8a3c4;
+    --line: #2e2b52; --accent: #ff6b95; --accent-fg: #1a0610; --ok: #38d3c2; --warn: #f2b84d;
+    --key: #efecfa; --key-fg: #0e0d1a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e0d1a; --surface: #171630; --surface2: #211f42; --fg: #efecfa; --muted: #a8a3c4;
+  --line: #2e2b52; --accent: #ff6b95; --accent-fg: #1a0610; --ok: #38d3c2; --warn: #f2b84d;
+  --key: #efecfa; --key-fg: #0e0d1a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+  padding-inline: 0;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 10;
+}
+.wrap {
+  max-width: 1120px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Header */
+.top { padding-block: 40px 20px; }
+.eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(34px, 7vw, 60px); line-height: 1.02; margin: 0 0 14px; text-wrap: balance; letter-spacing: -.01em; }
+h1 span { color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0 0 22px; font-size: 16px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+.stats li { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; }
+.stats b { font-family: var(--font-display); font-size: 22px; color: var(--fg); margin-right: 6px; font-weight: 700; }
+
+/* Controls */
+.controls { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-block: 1px solid var(--line); }
+.controls .wrap { display: flex; flex-wrap: wrap; gap: 10px 14px; padding-block: 12px; align-items: center; }
+.search { flex: 1 1 240px; min-width: 0; position: relative; }
+.search input {
+  width: 100%; min-width: 0; font: inherit; padding: 10px 12px 10px 38px; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--surface); color: var(--fg);
+}
+.search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; fill: none; stroke: var(--muted); stroke-width: 2; }
+.seg, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button, .chips button {
+  border: 1px solid var(--line); background: var(--surface); padding: 7px 12px; border-radius: 6px; font-size: 13px; font-weight: 500;
+}
+.seg button { font-family: var(--font-display); font-weight: 600; letter-spacing: .04em; }
+.seg button[aria-pressed="true"], .chips button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.group-label { font-size: 12px; color: var(--muted); font-family: var(--font-display); letter-spacing: .1em; text-transform: uppercase; margin-right: 2px; align-self: center; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+
+/* Results */
+.meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 18px 12px; color: var(--muted); font-size: 13px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; padding-bottom: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.card h3 { font-family: var(--font-display); font-weight: 600; font-size: 18px; line-height: 1.2; margin: 0; overflow-wrap: anywhere; }
+.pill { flex: none; font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+.pill.confirmed { color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, transparent); }
+.pill.reported { color: var(--warn); background: color-mix(in srgb, var(--warn) 16%, transparent); }
+.pill.unpublished { color: var(--muted); background: var(--surface2); }
+.effect { margin: 0; color: var(--muted); font-size: 14px; }
+.codebox { background: var(--surface2); border-radius: 6px; padding: 10px; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 52px; }
+.keys { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.key { width: 24px; height: 24px; border-radius: 4px; background: var(--key); display: grid; place-items: center; }
+.key svg { width: 15px; height: 15px; fill: var(--key-fg); }
+.key.D svg { transform: rotate(180deg); } .key.L svg { transform: rotate(-90deg); } .key.R svg { transform: rotate(90deg); }
+.copy { flex: none; border: 1px solid var(--line); background: var(--surface); border-radius: 5px; padding: 5px 10px; font-size: 12px; font-weight: 600; }
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+.none { color: var(--muted); font-size: 13px; font-style: italic; }
+.codebox.empty { background: transparent; border: 1px dashed var(--line); }
+dl.facts { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+dl.facts dt { color: var(--muted); }
+dl.facts dd { margin: 0; overflow-wrap: anywhere; }
+.cat { font-size: 12px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; font-family: var(--font-display); font-weight: 500; }
+
+.empty-state { grid-column: 1 / -1; border: 1px dashed var(--line); border-radius: 8px; padding: 36px 16px; text-align: center; color: var(--muted); }
+.empty-state button { margin-top: 10px; border: 1px solid var(--line); background: var(--surface); padding: 7px 14px; border-radius: 6px; }
+
+/* PC notice */
+.pc { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 26px; margin-block: 8px 12px; }
+.pc h2 { margin-top: 0; }
+
+/* Sections */
+section.info { padding-block: 34px 6px; }
+h2 { font-family: var(--font-display); font-size: 26px; line-height: 1.15; margin: 0 0 14px; font-weight: 700; text-wrap: balance; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 26px; }
+.two > * { min-width: 0; }
+ol.steps { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 60ch; }
+.note { margin-top: 14px; padding: 12px 14px; border-radius: 6px; background: var(--surface2); font-size: 14px; max-width: 60ch; }
+ul.src { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+ul.src li { font-size: 14px; }
+.legend { display: grid; gap: 8px; font-size: 14px; margin: 0; padding: 0; list-style: none; max-width: 60ch; }
+.legend li { display: flex; gap: 10px; align-items: baseline; }
+footer { margin-top: 40px; border-top: 1px solid var(--line); padding-block: 22px 40px; color: var(--muted); font-size: 13px; }
+footer p { margin: 0 0 6px; max-width: 80ch; }
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 13px; z-index: 20; }
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } .card:hover { border-color: var(--accent); } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">Unofficial fan reference · Checked <span id="checked">24 Nov 2026</span></p>
+    <h1>GTA 6 <span>Cheat Codes</span></h1>
+    <p class="lede">Every reported cheat with its PS5 D-pad code, unlock requirement and verification status. Codes marked Not published are not made up here: they appear only when a code is confirmed.</p>
+    <ul class="stats" id="stats" aria-label="Summary"></ul>
+  </div>
+</header>
+
+<div class="controls" role="search">
+  <div class="wrap">
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="q" type="search" placeholder="Search cheats, vehicles, unlock requirements" aria-label="Search cheats" autocomplete="off">
+    </div>
+    <div class="seg" role="group" aria-label="Platform">
+      <button type="button" id="p-ps5" aria-pressed="true">PS5</button>
+      <button type="button" id="p-pc" aria-pressed="false">PC</button>
+    </div>
+    <div class="filter-row" id="filters">
+      <span class="group-label">Type</span>
+      <div class="chips" id="cats" role="group" aria-label="Category"></div>
+      <span class="group-label">Status</span>
+      <div class="chips" id="stat" role="group" aria-label="Status"></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="pcnote" hidden>
+    <div class="pc">
+      <h2>PC codes: not confirmed</h2>
+      <p>As of <span class="pcdate">24 Nov 2026</span>, the reference checked lists zero confirmed GTA 6 PC cheat codes and no announced PC version. The button sequences on the PS5 tab are console D-pad inputs, so they are not PC commands.</p>
+      <p>Treat any PC command list or trainer download as unverified until a source confirms it. This page will show PC codes here once they exist.</p>
+      <button type="button" class="copy" id="to-ps5">View PS5 codes</button>
+    </div>
+  </div>
+
+  <div id="results">
+    <div class="meta"><span id="count" aria-live="polite"></span><span>Sorted A–Z</span></div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <section class="info" id="how">
+    <div class="two">
+      <div>
+        <h2>How to enter cheats on PS5</h2>
+        <ol class="steps">
+          <li>Open the in-game phone with D-pad Up.</li>
+          <li>Hold L1 and press R1 to open cheat entry.</li>
+          <li>Enter the D-pad sequence for the cheat.</li>
+          <li>The cheat must be unlocked first. Each card lists its unlock requirement.</li>
+        </ol>
+        <p class="note">Save your game before you experiment. Using a cheat reportedly disables trophies and saving for the current session.</p>
+      </div>
+      <div>
+        <h2>What the labels mean</h2>
+        <ul class="legend">
+          <li><span class="pill confirmed">Confirmed</span><span>A published button sequence exists.</span></li>
+          <li><span class="pill reported">Reported</span><span>The cheat is reported to exist. The code is not confirmed.</span></li>
+          <li><span class="pill unpublished">Not published</span><span>No code has been published for this cheat yet.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="info" id="sources">
+    <h2>Sources to watch for new codes</h2>
+    <ul class="src">
+      <li><a href="https://vicedex.app/gta-6-cheats/ps5/" target="_blank" rel="noopener noreferrer">Vicedex: GTA 6 PS5 cheat codes</a></li>
+      <li><a href="https://heistintel.com/gta-6/cheats/ps5/" target="_blank" rel="noopener noreferrer">HeistIntel: confirmed cheats and missing codes</a></li>
+      <li><a href="https://leonidawaypoint.com/guides/cheat-codes" target="_blank" rel="noopener noreferrer">Leonida Waypoint: cheat database</a></li>
+      <li><a href="https://www.gtabase.com/gta-6/gta-6-cheats-ps5-cheat-codes" target="_blank" rel="noopener noreferrer">GTA Base: PS5 cheat guide</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Unofficial fan site. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive. Game and product names belong to their owners.</p>
+    <p>Codes come from third-party reports and may change. Data last checked <span class="pcdate">24 Nov 2026</span>.</p>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const RAW = `Cheat,Category,PS5_Code,PC_Code,Status,Unlock_Requirement,Effect,Last_Checked
+$250000,Player,"↑ → ↓ ← ↑ ← ↓ →",N/A,Confirmed,Finish story,Adds $250000,2026-11-24
+Drunk,Player,"↑ ← → ↑ ↑ ← → ↑ ← →",N/A,Confirmed,Spend $2500 on alcohol,Drunk effect,2026-11-24
+Raise Heat Level,Player,"← ↓ → ↓ ↑ ↓ ↑",N/A,Confirmed,Lose 3-star wanted level 25 times,Raises heat,2026-11-24
+Raise Wanted Level,Player,"← ↓ → ↓ ↑ → ↑",N/A,Confirmed,Lose 3-star wanted level 50 times,Raises wanted level,2026-11-24
+Unlimited Focus,Player,"↓ ↑ ↑ ↓ ↑ ↓ ↑ ↓ ↑ →",N/A,Confirmed,Finish story,Unlimited focus,2026-11-24
+No Fall Damage,Player,Not published,N/A,Not published,Survive 20 freefalls from 40 feet,Prevents fall damage,2026-11-24
+Parachute,Player,Not published,N/A,Not published,Complete 50 skydives or base jumps,Adds parachute,2026-11-24
+Body Armor,Player,"↓ ↑ ← ↑ ↑ ↑ ↑ ↑ ↓ ↓",N/A,Confirmed,Complete 100 workouts,Adds armor,2026-11-24
+Repair Vehicle,Player,Not published,N/A,Not published,Win 10 races,Repairs vehicle,2026-11-24
+Unlimited Nitrous,Player,Not published,N/A,Not published,Complete 50 stunt jumps,Unlimited nitrous,2026-11-24
+Max Ammo,Combat,"↓ ↑ → ↓ ← ← ↑ ↑ ↓ ←",N/A,Confirmed,Win 25 bronze shooting medals,Maximum ammo,2026-11-24
+Infinite Ammo,Combat,"↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↓",N/A,Confirmed,Win 25 silver shooting medals,Unlimited ammo,2026-11-24
+No Reload,Combat,"↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↑",N/A,Confirmed,Win 25 gold shooting medals,No reloading,2026-11-24
+All Explosive Weapons,Combat,Not published,N/A,Not published,Throw 100 grenades,Adds explosive weapons,2026-11-24
+Incendiary Ammo,Combat,Not published,N/A,Not published,Burn 100 enemies,Incendiary ammunition,2026-11-24
+Exploding Bottles,Combat,Not published,N/A,Not published,Throw 100 Molotovs,Exploding bottles,2026-11-24
+Explosive Shotgun,Combat,Not published,N/A,Not published,Hit 100 enemies with explosive damage,Explosive shotgun,2026-11-24
+Hauners H-AT,Combat,Not published,N/A,Not published,Destroy 100 vehicles,Adds weapon,2026-11-24
+Attack Force,Combat,"↓ ↑ ← ← → ↓ ↓ ↑ ↓",N/A,Confirmed,Finish story,Force impact,2026-11-24
+Exploding Balls,Combat,"↓ ↑ ← ← → ↓ ↓ ↑ →",N/A,Confirmed,Hit 20 enemies with explosive damage,Exploding sports balls,2026-11-24
+Vehicle Force,Combat,"↓ ↑ ← ← → ↓ ← ↑ ↓",N/A,Confirmed,Kill 25 enemies with vehicles,Vehicle impact force,2026-11-24
+Spawn Interstate Ambulance,Vehicle,Not published,N/A,Not published,Discover vehicle,Spawn ambulance,2026-11-24
+Spawn Airboat 09,Vehicle,Not published,N/A,Not published,Complete 5 survival challenges,Spawn airboat,2026-11-24
+Spawn Bravado Banshee,Vehicle,Not published,N/A,Not published,Complete combat challenges,Spawn car,2026-11-24
+Spawn Tuff BMX,Vehicle,Not published,N/A,Not published,Complete 5 fitness challenges,Spawn BMX,2026-11-24
+Spawn Maibatsu Boomazoom,Vehicle,"← ↑ → ↓ ← ← ↑ ←",N/A,Confirmed,Complete 5 shopping challenges,Spawn vehicle,2026-11-24
+Spawn Nagasaki Carbon RS,Vehicle,Not published,N/A,Not published,Complete exploration challenges,Spawn motorcycle,2026-11-24
+Spawn 65 Vapid Dominator,Vehicle,Not published,N/A,Reported only,Complete fitness challenges,Spawn car,2026-11-24
+Spawn Progen Emerus,Vehicle,Not published,N/A,Not published,Complete vehicle challenges,Spawn car,2026-11-24
+Spawn Inflatable Flamingo,Vehicle,Not published,N/A,Reported only,Destroy 50 cocaine flamingos,Spawn vehicle,2026-11-24
+Spawn MTL Pumper,Vehicle,"← ↑ → ↓ ← → → ↑",N/A,Confirmed,Discover MTL Pumper,Spawn fire truck,2026-11-24
+Spawn Vapid Stanier G2 Taxi,Vehicle,Not published,N/A,Not published,Complete 5 sports challenges,Spawn taxi,2026-11-24
+Spawn Hauners P-996 Lazer,Vehicle,Not published,N/A,Reported only,Complete all challenges,Spawn aircraft,2026-11-24
+Spawn HVY Bulldozer,Vehicle,"← ↑ → ↓ ← → → ↓",N/A,Confirmed,Discover HVY Bulldozer,Spawn bulldozer,2026-11-24
+Spawn Lapwing Mallard,Vehicle,Not published,N/A,Not published,Complete 5 vehicle challenges,Spawn aircraft,2026-11-24
+Spawn Brimstone Golfer,Vehicle,Not published,N/A,Reported only,Complete sports challenges,Spawn vehicle,2026-11-24
+Spawn Hauners Rhino Tank,Vehicle,Not published,N/A,Reported only,Complete survival challenges,Spawn tank,2026-11-24
+Spawn Maibatsu Sanchez,Vehicle,Not published,N/A,Not published,Complete 5 criminal challenges,Spawn motorcycle,2026-11-24
+Spawn Nagasaki Sea Sparrow,Vehicle,Not published,N/A,Not published,Complete 5 exploration challenges,Spawn helicopter,2026-11-24
+Spawn Speeder 700 GT,Vehicle,Not published,N/A,Not published,Complete 5 combat challenges,Spawn boat,2026-11-24
+Spawn Truffade Thrax,Vehicle,Not published,N/A,Not published,Complete shopping challenges,Spawn car,2026-11-24
+Spawn Western Zombie Bobber,Vehicle,Not published,N/A,Reported only,Complete criminal challenges,Spawn motorcycle,2026-11-24
+Move Time Forward,Environment,Not published,N/A,Not published,Find 10 watches,Advance time,2026-11-24
+Pause Time of Day,Environment,Not published,N/A,Not published,Find 20 watches,Freeze time,2026-11-24
+Cycle Weather,Environment,"↓ → ↑ ↓ → ↑ →",N/A,Confirmed,Finish story,Change weather,2026-11-24
+Golden Hour,Screen Filter,Not published,N/A,Not published,Spend 4 hours holding hands,Golden filter,2026-11-24
+Powdered Sugar,Screen Filter,Not published,N/A,Not published,Scan all space debris,White sparkling filter,2026-11-24
+Pinhole,Screen Filter,Not published,N/A,Not published,Clear 25 gang operations,Pinhole filter,2026-11-24
+Neon Jungle,Screen Filter,Not published,N/A,Not published,Discover 16 Girlypop vehicles,Neon filter,2026-11-24
+Yesteryear,Screen Filter,Not published,N/A,Not published,Discover the Ridgeway,Black and white filter,2026-11-24
+Cataclysm,Screen Filter,"↓ ↓ ↑ → → ↑ ← ← → →",N/A,Confirmed,Discover Martha's Vamos,Smoke filter,2026-11-24
+Videotape,Screen Filter,Not published,N/A,Not published,Complete 50 partner activities,Videotape filter,2026-11-24
+Dark Mirror,Screen Filter,Not published,N/A,Not published,Make $500000 selling vehicles,Inverted dark filter,2026-11-24
+Migraine,Screen Filter,Not published,N/A,Not published,Survive 6 minutes at 6 stars,Distorted filter,2026-11-24
+Dollhouse,Screen Filter,"↓ ↓ ↑ → → ↑ ← ← ↓ →",N/A,Confirmed,Spend 8 hours with partner,Vivid filter,2026-11-24
+Bubblegum,Screen Filter,Not published,N/A,Not published,Find 24 flamingo cards,Purple yellow filter,2026-11-24
+Fast Forward,Screen Filter,Not published,N/A,Not published,Complete 50 meditations,Motion blur filter,2026-11-24
+Fisheye,Screen Filter,Not published,N/A,Not published,Catch 100 fish,Fisheye filter,2026-11-24
+Faded Glory,Screen Filter,"↓ ↓ ↑ → → ↑ ← ← ← →",N/A,Confirmed,Rob 50 stores with partner,CRT filter,2026-11-24
+Pixel Art,Screen Filter,Not published,N/A,Not published,Make $250000 selling collectibles,Pixelated filter,2026-11-24
+Hellscape,Screen Filter,Not published,N/A,Not published,Steal 100 police vehicles,Red orange filter,2026-11-24`;
+
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const STATUS_LABEL = { confirmed: "Confirmed", reported: "Reported", unpublished: "Not published" };
+const DIR_NAME = { "↑": "Up", "↓": "Down", "←": "Left", "→": "Right" };
+const DIR_CLASS = { "↑": "U", "↓": "D", "←": "L", "→": "R" };
+const ARROW_PATH = "M12 4l8 10h-5v6H9v-6H4z";
+
+function parseLine(line) {
+  const out = []; let cur = "", q = false;
+  for (const ch of line) {
+    if (ch === '"') q = !q;
+    else if (ch === "," && !q) { out.push(cur); cur = ""; }
+    else cur += ch;
+  }
+  out.push(cur);
+  return out;
+}
+function fmtDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return d + " " + MONTHS[m - 1] + " " + y;
+}
+
+const rows = RAW.trim().split("\n").slice(1).map(parseLine).map(f => {
+  const status = f[4] === "Confirmed" ? "confirmed" : f[4] === "Reported only" ? "reported" : "unpublished";
+  const code = f[2] && f[2] !== "Not published" ? f[2].trim().split(/\s+/) : null;
+  return { name: f[0], cat: f[1], code, status, unlock: f[5], effect: f[6], checked: f[7] };
+});
+rows.sort((a, b) => a.name.localeCompare(b.name, "en", { numeric: true }));
+
+const state = { q: "", cat: "All", status: "All", platform: "ps5" };
+const $ = id => document.getElementById(id);
+
+// Header stats and dates
+const total = rows.length;
+const nConf = rows.filter(r => r.status === "confirmed").length;
+const nRep = rows.filter(r => r.status === "reported").length;
+const nUnp = rows.filter(r => r.status === "unpublished").length;
+const latest = rows.map(r => r.checked).sort().pop();
+document.querySelectorAll(".pcdate").forEach(el => el.textContent = fmtDate(latest));
+$("checked").textContent = fmtDate(latest);
+[[nConf, "confirmed PS5 codes"], [nRep, "reported only"], [nUnp, "not published"], [0, "PC codes confirmed"]].forEach(([n, label]) => {
+  const li = document.createElement("li");
+  const b = document.createElement("b"); b.textContent = n;
+  li.append(b, label);
+  $("stats").append(li);
+});
+
+// Filter chips
+function makeChips(host, values, key, labelFn) {
+  values.forEach(v => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = labelFn ? labelFn(v) : v;
+    b.dataset.v = v; b.setAttribute("aria-pressed", String(state[key] === v));
+    b.addEventListener("click", () => { state[key] = v; sync(host, key); render(); });
+    host.append(b);
+  });
+}
+function sync(host, key) {
+  host.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === state[key])));
+}
+const cats = ["All", ...Array.from(new Set(rows.map(r => r.cat)))];
+makeChips($("cats"), cats, "cat");
+makeChips($("stat"), ["All", "confirmed", "reported", "unpublished"], "status", v => v === "All" ? "All" : STATUS_LABEL[v]);
+
+function keyEl(sym) {
+  const k = document.createElement("span");
+  k.className = "key " + DIR_CLASS[sym];
+  k.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + ARROW_PATH + '"/></svg>';
+  return k;
+}
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+let toastTimer;
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 1800);
+}
+function copyCode(r) {
+  const text = r.code.join(" ");
+  const fallback = () => {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.append(ta); ta.select();
+    let ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    ta.remove(); toast(ok ? "Copied " + r.name : "Select the code and copy it");
+  };
+  try {
+    navigator.clipboard.writeText(text).then(() => toast("Copied " + r.name), fallback);
+  } catch (e) { fallback(); }
+}
+
+function card(r) {
+  const c = el("article", "card");
+  const head = el("div", "card-head");
+  const left = el("div");
+  left.append(el("div", "cat", r.cat), el("h3", null, r.name));
+  head.append(left, el("span", "pill " + r.status, STATUS_LABEL[r.status]));
+  c.append(head, el("p", "effect", r.effect));
+
+  const box = el("div", "codebox" + (r.code ? "" : " empty"));
+  if (r.code) {
+    const keys = el("div", "keys");
+    keys.setAttribute("role", "img");
+    keys.setAttribute("aria-label", r.code.map(s => DIR_NAME[s]).join(", "));
+    r.code.forEach(s => keys.append(keyEl(s)));
+    const btn = el("button", "copy", "Copy");
+    btn.type = "button"; btn.setAttribute("aria-label", "Copy code for " + r.name);
+    btn.addEventListener("click", () => copyCode(r));
+    box.append(keys, btn);
+  } else {
+    box.append(el("span", "none", r.status === "reported" ? "Reported to exist, code not confirmed" : "Code not published yet"));
+  }
+  c.append(box);
+
+  const dl = el("dl", "facts");
+  [["Unlock", r.unlock], ["Platform", "PS5"], ["Checked", fmtDate(r.checked)]].forEach(([k, v]) => {
+    dl.append(el("dt", null, k), el("dd", null, v));
+  });
+  c.append(dl);
+  return c;
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const list = rows.filter(r =>
+    (state.cat === "All" || r.cat === state.cat) &&
+    (state.status === "All" || r.status === state.status) &&
+    (!q || (r.name + " " + r.cat + " " + r.effect + " " + r.unlock).toLowerCase().includes(q))
+  );
+  const grid = $("grid"); grid.replaceChildren();
+  if (!list.length) {
+    const e = el("div", "empty-state");
+    e.append(el("div", null, "No cheats match these filters."));
+    const b = el("button", null, "Reset filters"); b.type = "button";
+    b.addEventListener("click", () => {
+      state.q = ""; state.cat = "All"; state.status = "All"; $("q").value = "";
+      sync($("cats"), "cat"); sync($("stat"), "status"); render();
+    });
+    e.append(b); grid.append(e);
+  } else list.forEach(r => grid.append(card(r)));
+  $("count").textContent = "Showing " + list.length + " of " + total + " cheats";
+}
+
+function setPlatform(p, fromHash) {
+  state.platform = p;
+  $("p-ps5").setAttribute("aria-pressed", String(p === "ps5"));
+  $("p-pc").setAttribute("aria-pressed", String(p === "pc"));
+  $("pcnote").hidden = p !== "pc";
+  $("results").hidden = p === "pc";
+  $("filters").hidden = p === "pc";
+  if (!fromHash) { try { history.replaceState(null, "", "#" + p); } catch (e) { try { location.hash = p; } catch (e2) {} } }
+}
+$("p-ps5").addEventListener("click", () => setPlatform("ps5"));
+$("p-pc").addEventListener("click", () => setPlatform("pc"));
+$("to-ps5").addEventListener("click", () => setPlatform("ps5"));
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+function readHash() { try { setPlatform(location.hash === "#pc" ? "pc" : "ps5", true); } catch (e) { setPlatform("ps5", true); } }
+window.addEventListener("hashchange", readHash);
+
+render();
+readHash();
+</script>
+
+</body></html>
